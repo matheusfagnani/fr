@@ -5,6 +5,8 @@ pygame.init()
 
 jogador1 = Boneco("chico-bento.png",80,50,300,450)
 
+lista=["soja".png(80,50,300,450)],
+
 
 tela = pygame.display.set_mode((800,500))
 pygame.display.set_caption("CHICO BENTO")
@@ -25,6 +27,10 @@ while rodando:
         #Desenhando as imagens
     jogador1.movimentar_via_controle(pygame.K_UP,pygame.K_DOWN,pygame.K_RIGHT,pygame.K_LEFT)
     jogador1.desenhar(tela)
+    
+    for soja in lista:
+        soja.movimenta()
+        soja.desenhar(tela)
 
 
 

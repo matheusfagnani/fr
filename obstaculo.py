@@ -20,7 +20,7 @@ class Obstaculo:
     
 
     def movimenta(self):
-        self.pos_x = self.pos_x - self.velocidade
+        self.pos_y = self.pos_y + self.velocidade
         if self.pos_x < -200:
             self.pos_x = 850
             self.velocidade = random.randint(10, 30)
