@@ -20,7 +20,8 @@ while rodando:
             print("Você clicou!!")
         if evento.type == pygame.QUIT:
             rodando = False
-        tela.fill((80,120,200))
+    
+    tela.fill((80,120,200))
         #Desenhando as imagens
     jogador1.movimentar_via_controle(pygame.K_UP,pygame.K_DOWN,pygame.K_RIGHT,pygame.K_LEFT)
     jogador1.desenhar(tela)
