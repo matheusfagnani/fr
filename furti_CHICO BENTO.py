@@ -1,11 +1,18 @@
 import pygame
 from personagem import Boneco
+from p2 import Obstaculo
 pygame.init()
+
+
 #Constrindo a tela
 
 jogador1 = Boneco("chico-bento.png",80,50,300,450)
 
-lista=["soja".png(80,50,300,450)],
+lista=[
+    Obstaculo("soja.png",80,50,200,-100),
+    Obstaculo("milho.png",80,50,200,-100),
+    Obstaculo("bomb.webp",80,50,200,-100)]
+
 
 
 tela = pygame.display.set_mode((800,500))

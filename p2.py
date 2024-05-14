@@ -21,9 +21,8 @@ class Obstaculo:
 
     def movimenta(self):
         self.pos_y = self.pos_y + self.velocidade
-        if self.pos_x < -200:
-            self.pos_x = 850
-            self.velocidade = random.randint(10, 30)
+        if self.pos_y >= 900:
+            self.pos_y = -100
 
     def desenhar(self, tela):
         tela.blit(self.imagem,(self.pos_x,self.pos_y))        
